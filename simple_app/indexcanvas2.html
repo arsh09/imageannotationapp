@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Medical Image Annotaion</title>
+    <link rel="stylesheet" href="styles2.css">
+      <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
+      <script src="FileSaver.min.js"></script>
+  </head>
+
+  <body>
+    <header>
+      <h1>Medical Image Annotation Tool</h1>
+    </header>
+
+    <div class="mainBody">
+      <section>
+
+        <section class="leftSideElements">
+          <section class="toolbarPallete">
+
+            <div title = "Open a file" id="openIcon" class="toolbarOptions">
+              <input type="file" id = "inputForFiles">
+              <img id = "openFileIcon" src="images/pngs/open-file-button.png" alt="" height="40">
+            </div>
+
+            <div title = "Edit annotations"  id="editIcon" class="toolbarOptions">
+              <img src="images/pngs/edit.png" alt="" height="40">
+            </div>
+
+            <div title = "Remove all annotations"  id="cursorIcon" class="toolbarOptions">
+              <img src="images/pngs/decline.png" alt="" height="40">
+            </div>
+
+            <div title = "Draw free pencil"  id="pencilIcon" class="toolbarOptions">
+              <img src="images/pngs/pencil.png" alt="" height="40">
+            </div>
+
+            <div title = "Draw a line"  id="lineIcon" class="toolbarOptions">
+              <img src="images/pngs/line.png" alt="" height="40">
+            </div>
+
+            <div title = "Draw a rectangle"  id="rectangleIcon" class="toolbarOptions">
+              <img src="images/pngs/rectangle.png" alt="" height="40">
+            </div>
+
+            <div title = "Draw a circle"  id="circleIcon" class="toolbarOptions">
+              <img src="images/pngs/circle-shape-outline.png" alt="" height="40">
+            </div>
+
+            <div title = "Draw a polygon"  id="hexagonIcon" class="toolbarOptions">
+              <img src="images/pngs/hexagon.png" alt="" height="40">
+            </div>
+          </section>
+
+          <div class="container">
+            <div id="canvases_id" class="left" >
+              <canvas id="imageCanvas"  height="800" width = "800" style="z-index:1;"></canvas>
+          </div>
+
+      </section>
+
+        <section class="rightSideElements">
+          <aside>
+            <section class="annotationPallete">
+
+              <div id="addIcon" class="annotationOptions">
+                <img src="images/pngs/plus.png" alt="" height="40">
+              </div>
+
+              <div id="deleteIcon" class="annotationOptions">
+                <img src="images/pngs/rubbish-bin.png" alt="" height="40">
+              </div>
+
+              <div id="searchIcon" class="annotationOptions">
+                <img src="images/pngs/search.png" alt="" height="40">
+              </div>
+              <h2>Annotation List</h2>
+
+              <ul id="myUL">
+                  <li>
+                    <!-- <div class="liDiv">
+                      <div class="imgSrc" id ="addMe">
+                        <img src="images/pngs/plus.png" height="25" alt="">
+                      </div>
+
+                      <div class="imgSrc" id ="sketchBook">
+                        <img src="images/pngs/sketchbook.png" height="25" alt="">
+                      </div>
+
+                    </div>
+                    Added here -->
+                  </li>
+              </ul>
+
+            </section>
+          </aside>
+
+          <aside>
+            <section class="buttonPallete">
+
+              <div class="buttonOptions">
+
+                <button id="uploadImage_btn" type="button" name="Upload">Save Image</button>
+                <!-- <input id="button" type="file" name="name" style="display:none;"/>
+                <button id="saveImage_btn" "type="button" name="Upload">Deselect Image</button> -->
+              </div>
+
+            </section>
+          </aside>
+
+        </section>
+
+
+      </section>
+
+    </div>
+    <script src=fabric.min.js  charset="utf-8"> </script>
+    <script src=draw2.js  charset="utf-8"> </script>
+
+  </body>
+</html>

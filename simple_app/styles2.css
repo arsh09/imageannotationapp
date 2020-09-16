@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css?family=Asap:400,500,600&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: Asap, sans-serif;
+}
+
+section, header, footer, aside, main, nav, article{
+  display: block;
+}
+
+body {
+  background: #e8eaed;
+  text-align: center;
+}
+
+header{
+  background: #24272E;
+  padding: 20px;
+}
+
+header > h1 {
+  color: white;
+  font-size: 50px;
+  text-align: center;
+}
+
+hr{
+  display: block;
+  border-width: 1px;
+  margin: 1px;
+  border-color: #24272E;
+}
+
+input[type ="file"]{
+  display: none;
+}
+
+.toolbarOptions {
+  cursor: pointer;
+}
+
+.mainBody{
+
+  width: 1500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.toolbarPallete {
+  margin: 5px 10px;
+  border: 4px solid  #24272E;
+  border-radius: 3px;
+  padding: 5px 20px;
+  padding-left: 2px;
+
+}
+
+
+.toolbarOptions{
+  display: inline-block;
+  border: 4px solid #24272E;
+  border-radius: 50%;
+  padding: 15px 15px;
+  /* padding-left: 10px; */
+  border-color: black ;
+}
+
+.container {
+  margin: 5px 10px;
+  border: 4px solid #24272E;
+  border-radius: 3px;
+  position: relative;
+  width: 872px;
+  height: 750px ;
+}
+
+#imageCanvas{
+  position:absolute;
+  border:1px solid #24272E;
+  top: 0px;
+  left: 0px;
+  background-color: rgba(0,0,0,0);
+}
+
+#paintCanvas{
+  position:absolute;
+  border:1px solid #24272E;
+  top: 0px;
+  left: 0px;
+  background-color: rgba(0,0,0,0);
+}
+
+.leftSideElements {
+  margin: 10px;
+  padding: 10px;
+  margin-right: 0px;
+  float: left;
+  width: 60%;
+}
+
+.rightSideElements {
+  margin: 10px;
+  padding: 10px;
+  margin-left: 0px;
+  float: left;
+  width: 30%;
+}
+
+.annotationPallete {
+  margin: 5px 10px;
+  border: 4px solid  #24272E;
+  border-radius: 3px;
+  padding: 10px 20px;
+
+}
+
+.annotationOptions {
+  display: inline-block;
+  padding: 10px 2px;
+  padding-left: 10px;
+
+}
+
+.buttonPallete {
+  margin: 5px 10px;
+  border: 4px solid  #24272E;
+  border-radius: 3px;
+  padding: 20px 20px;
+}
+
+.buttonOptions {
+  /* display: inline-block;
+  padding: 5px 5px;
+  padding-left: 10px;
+  text-align: center; */
+}
+
+#uploadImage_btn {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  width: 300px;
+  height: auto;
+}
+
+#uploadButtonId{
+  font-size: 18px;
+  font-weight: bold;
+  background: #e8eaed;
+  border-radius: 10px;
+  width: 180px;
+  height: 50px;
+  margin: 5px 10px;
+}
+
+#saveButtonId{
+  font-size: 18px;
+  font-weight: bold;
+  background: #e8eaed;
+  border-radius: 10px;
+  width: 180px;
+  height: 50px;
+  margin: 5px 10px;
+}
+
+/* Remove margins and padding from the list */
+ul {
+  margin: 0;
+  padding: 5px;
+  margin-top: 20px;
+  height: 610px;
+  overflow-y: scroll;
+
+}
+
+/* Style the list items */
+ul li {
+  cursor: pointer;
+  position: relative;
+  padding: 12px 8px 12px 40px;
+  list-style-type: none;
+  background: #eee;
+  font-size: 18px;
+  transition: 0.2s;
+
+  /* make the list items unselectable */
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Set all odd list items to a different color (zebra-stripes) */
+ul li:nth-child(odd) {
+  background: #f9f9f9;
+}
+
+/* Darker background-color on hover */
+ul li:hover {
+  background: red;
+}
+
+/* When clicked on, add a background color and strike out text */
+ul li.checked {
+  background: red;#888;
+  color: #fff;
+  text-decoration: line-through;
+}
+
+/* Add a "checked" mark when clicked on */
+ul li.checked::before {
+  content: '';
+  position: absolute;
+  border-color: #fff;
+  border-style: solid;
+  border-width: 0 2px 2px 0;
+  top: 10px;
+  left: 16px;
+  transform: rotate(45deg);
+  height: 15px;
+  width: 7px;
+}
+
+.close:hover {
+  background-color: #f44336;
+  color: white;
+}
+
+ul li {
+  text-align: left;
+}
+
+.liDiv{
+  margin: auto;
+}
+
+.imgSrc {
+  float: right;
+  /* margin-left : 10px;
+  margin-right : 10px; */
+  padding-left: 5px;
+
+}
+
+#hexagonIcon{
+  display: none;
+}
+
+
+.green-glow {
+  border: 4px solid #4dcc7d;
+  box-shadow: 0 0 10px #31b43a;
+}
